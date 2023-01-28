@@ -1,0 +1,76 @@
+#head{
+    text-align: center;
+    color: rgb(56, 174, 253);
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+#cards .container{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+#cards .same{
+    width: 400px;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#cards .same .img{
+    width: 400px;
+    height: 50%;
+    position: relative;
+}
+#cards .same .img img{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+#cards .same .pizza, #cards .same .biryani, #cards .same .burger{
+    position: absolute;
+    top:10px;
+    color: white;
+    background-color: rgb(226, 0, 79);
+    padding: 3px 12px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+#cards .same .about, #cards .same .profile{
+    margin-left: 3%;
+}
+#cards .same .about a{
+    text-decoration: none;
+    color: rgb(0, 145, 255);
+}
+#cards .same .profile img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+#cards .same .profile{
+    display: flex;
+    gap:20px;
+}
+
+#cards .for-flex{
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 1400px) and (min-width: 992px){
+    #cards .same{
+        width: 360px;
+    }
+    #cards .same .img{
+        width: 360px;
+    }
+  }
+  @media only screen and (max-width: 1200px) and (min-width: 992px){
+    #cards .same{
+        width: 300px;
+    }
+    #cards .same .img{
+        width: 300px;
+    }
+  }
